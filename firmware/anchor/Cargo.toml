@@ -1,0 +1,32 @@
+[package]
+name = "anchor"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+build = "build.rs"
+
+[dependencies]
+common = { workspace = true }
+postcard = { workspace = true }
+heapless = { workspace = true }
+
+# Embassy framework
+embassy-executor = { version = "0.9", features = ["arch-cortex-m", "executor-thread"] }
+embassy-time = { version = "0.5", features = ["tick-hz-32_768"] }
+embassy-nrf = { version = "0.9", features = ["nrf52833", "time-driver-rtc1", "gpiote", "unstable-pac"] }
+embassy-sync = "0.7"
+
+# ARM Cortex-M
+cortex-m = { version = "0.7", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7"
+
+# Embedded HAL
+embedded-hal = "1.0"
+embedded-hal-async = "1.0"
+
+# Logging
+defmt = "1.0"
+defmt-rtt = "1.1"
+panic-probe = { version = "1.0", features = ["print-defmt"] }
+

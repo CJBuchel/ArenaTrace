@@ -1,0 +1,33 @@
+[workspace]
+members = [
+  "common",
+  "firmware/tag",
+  "firmware/anchor",
+  "server",
+  "xtask",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+authors = ["CJBuchel"]
+license = "MIT"
+edition = "2024"
+
+[profile.dev]
+debug = 2
+opt-level = "z"
+lto = false
+
+[profile.release]
+debug = 2
+lto = "fat"
+opt-level = "z"
+codegen-units = 1
+
+[workspace.dependencies]
+# Shared across firmware and server — wire format compatibility matters
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+postcard = { version = "1.1", default-features = false }
+heapless = "0.9"
+common = { path = "common" }
