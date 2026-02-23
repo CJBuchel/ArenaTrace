@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "common",
+  "firmware/dw3000",
   "firmware/tag",
   "firmware/anchor",
   "server",
@@ -31,3 +32,4 @@ serde = { version = "1.0", default-features = false, features = ["derive"] }
 postcard = { version = "1.1", default-features = false }
 heapless = "0.9"
 common = { path = "common" }
+dw3000 = { path = "firmware/dw3000" }

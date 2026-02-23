@@ -14,12 +14,7 @@
    cargo xtask build
    ```
 
-That's it. No additional tools are required to build.
-
 ## Build system
-
-This project uses `cargo xtask` as the build orchestrator. It is a plain Rust binary inside the workspace — nothing to install.
-
 ```sh
 cargo xtask build            # build everything
 cargo xtask build-firmware   # firmware only (tag + anchor)

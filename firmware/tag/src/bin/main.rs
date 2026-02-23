@@ -10,7 +10,7 @@ use embassy_nrf::gpio::{Level, Output, OutputDrive};
 use embassy_nrf::peripherals;
 use embassy_nrf::spim;
 use embassy_nrf::spim::{Config, Frequency};
-use embassy_time::{Duration, Ticker};
+use embassy_time::{Duration, Ticker, Timer};
 use tag::spi::SpiDevice;
 
 bind_interrupts!(struct Irqs {
@@ -21,7 +21,7 @@ bind_interrupts!(struct Irqs {
 async fn main(_spawner: Spawner) {
   let p = embassy_nrf::init(Default::default());
 
-  // SPI config
+  // SPI config — DW3000 supports up to 38 MHz, 8 MHz is safe for startup
   let mut config = Config::default();
   config.frequency = Frequency::M8;
 
@@ -33,17 +33,35 @@ async fn main(_spawner: Spawner) {
   );
 
   let cs = Output::new(p.P0_17, Level::High, OutputDrive::Standard);
+  let spi_device = SpiDevice::new(spi, cs);
 
-  let mut device = SpiDevice::new(spi, cs);
+  // Initialize DW3000 — reads DEV_ID to verify SPI link
+  let mut delay = embassy_time::Delay;
+  let dw = dw3000::DW3000::new(spi_device);
+  let mut dw = match dw.init(&mut delay).await {
+    Ok(dw) => dw,
+    Err(e) => {
+      defmt::error!("DW3000 init failed: {}", e);
+      loop {
+        Timer::after(Duration::from_secs(1)).await;
+      }
+    }
+  };
 
-  let mut ticker = Ticker::every(Duration::from_hz(1));
+  defmt::info!("DW3000 initialized, starting 60Hz TX loop");
+
+  let mut ticker = Ticker::every(Duration::from_hz(60));
+  let mut seq: u8 = 0;
 
   loop {
     ticker.next().await;
 
-    let tx = [0xAA, 0x55, 0xAA, 0x55];
-    let mut rx = [0u8; 4];
+    // Build a small blink payload: [sequence_number]
+    let payload = [seq];
+    seq = seq.wrapping_add(1);
 
-    device.transfer(&tx, &mut rx).await.unwrap();
+    if let Err(e) = dw.send(&payload).await {
+      defmt::warn!("TX failed: {}", e);
+    }
   }
 }

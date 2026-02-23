@@ -224,6 +224,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "dw3000"
+version = "0.1.0"
+dependencies = [
+ "defmt",
+ "embedded-hal-async",
+]
+
+[[package]]
 name = "embassy-embedded-hal"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -715,6 +723,7 @@ dependencies = [
  "cortex-m-rt",
  "defmt",
  "defmt-rtt",
+ "dw3000",
  "embassy-executor",
  "embassy-nrf",
  "embassy-sync",

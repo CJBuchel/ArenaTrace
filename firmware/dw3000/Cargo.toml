@@ -1,0 +1,10 @@
+[package]
+name = "dw3000"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+embedded-hal-async = "1.0"
+defmt = "1.0"

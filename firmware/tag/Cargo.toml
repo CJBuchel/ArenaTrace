@@ -8,6 +8,7 @@ build = "build.rs"
 
 [dependencies]
 common = { workspace = true }
+dw3000 = { workspace = true }
 postcard = { workspace = true }
 heapless = { workspace = true }
 
@@ -29,4 +30,3 @@ embedded-hal-async = "1.0"
 defmt = "1.0"
 defmt-rtt = "1.1"
 panic-probe = { version = "1.0", features = ["print-defmt"] }
-
