@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "dw3220")(type "KiCad")(uri "C:/Users/Conno/Documents/code/Meridian-RTLS/boards/libs/dw3220.kicad_sym")(options "")(descr ""))
+  (lib (name "dw3210")(type "KiCad")(uri "C:/Users/Conno/Documents/code/Meridian-RTLS/boards/libs/dw3210.kicad_sym")(options "")(descr ""))
+  (lib (name "ABM8-38.400MHZ-12-D1G-T")(type "KiCad")(uri "C:/Users/Conno/Documents/code/Meridian-RTLS/boards/libs/ABM8-38.400MHZ-12-D1G-T.kicad_sym")(options "")(descr ""))
+  (lib (name "1060")(type "KiCad")(uri "C:/Users/Conno/Documents/code/Meridian-RTLS/boards/libs/1060.kicad_sym")(options "")(descr ""))
+)
