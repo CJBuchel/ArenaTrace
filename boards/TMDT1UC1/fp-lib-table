@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "meridian")(type "KiCad")(uri "${KIPRJMOD}/../libs/meridian.pretty")(options "")(descr ""))
+)

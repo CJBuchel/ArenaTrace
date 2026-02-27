@@ -1,11 +1,4 @@
-27109457076709762
-ABM8-38.400MHZ-12-D1G-T
-XTAL_ABM8-38.400MHZ-12-D1G-T
-
-
-0
-4
-4
+27109457239701819
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -20,13 +13,6 @@ audio belton reverb
 0
 7
 7
-BAT_1060
-BAT_1060
-
-
-0
-2
-2
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -107428,42 +107414,56 @@ Varistor VF
 0
 2
 2
-dw3210
+meridian
+BAT_CR2032-BS-6-1
+
+
+0
+2
+2
+meridian
+XTAL_ABM8-38.400MHZ-12-D1G-T
+
+
+0
+4
+4
+meridian
 qfn_DW3210_QOR
 
 DW3220 
 0
 40
 40
-dw3210
+meridian
 qfn_DW3210_QOR-L
 
 DW3220 
 0
 40
 40
-dw3210
+meridian
 qfn_DW3210_QOR-M
 
 DW3220 
 0
 40
 40
-dw3220
+meridian
 qfn_DW3220_QOR
 
 DW3220 
 0
 40
 40
-dw3220
+meridian
 qfn_DW3220_QOR-L
 
 DW3220 
 0
 40
 40
-dw3220
+meridian
 qfn_DW3220_QOR-M
 
 DW3220 

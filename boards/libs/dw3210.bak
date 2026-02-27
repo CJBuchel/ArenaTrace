@@ -63,7 +63,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "qfn_DW3220_QOR qfn_DW3220_QOR-M qfn_DW3220_QOR-L qfn_DW3210_QOR"
+		(property "ki_fp_filters" "qfn_DW3210_QOR qfn_DW3210_QOR-M qfn_DW3210_QOR-L"
 			(at 0 0 0)
 			(effects
 				(font

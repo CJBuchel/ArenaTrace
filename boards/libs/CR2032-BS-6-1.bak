@@ -2,15 +2,15 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "ABM8-38.400MHZ-12-D1G-T"
+	(symbol "CR2032-BS-6-1"
 		(pin_names
 			(offset 1.016)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "Y"
-			(at -5.0878 6.3559 0)
+		(property "Reference" "BT"
+			(at -3.81 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18,8 +18,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "ABM8-38.400MHZ-12-D1G-T"
-			(at -5.0944 -10.16 0)
+		(property "Value" "CR2032-BS-6-1"
+			(at -3.81 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "meridian:XTAL_ABM8-38.400MHZ-12-D1G-T"
+		(property "Footprint" "BAT_CR2032-BS-6-1:BAT_CR2032-BS-6-1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -55,7 +55,7 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" "44041"
+		(property "MF" "Shenzhen Q&J Electronics Co. Ltd"
 			(at 0 0 0)
 			(effects
 				(font
@@ -65,7 +65,7 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "Abracon"
+		(property "MAXIMUM_PACKAGE_HEIGHT" "5.55mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -75,7 +75,27 @@
 				(hide yes)
 			)
 		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.8 mm"
+		(property "Package" "Package"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CR2032-BS-6-1/Shenzhen+Huacan+Tianlu+Electronics+Co.%252C+Ltd./view-part/?ref=eda"
 			(at 0 0 0)
 			(effects
 				(font
@@ -95,36 +115,95 @@
 				(hide yes)
 			)
 		)
-		(symbol "ABM8-38.400MHZ-12-D1G-T_0_0"
+		(property "PARTREV" "2011/2/14"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CR2032-BS-6-1/Shenzhen+Huacan+Tianlu+Electronics+Co.%252C+Ltd./view-part/?ref=snap"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "CR2032-BS-6-1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Battery base CR2032 SMD Battery Connectors ROHS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" "CR2032-BS-6-1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Shenzhen Q and J Electronics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(symbol "CR2032-BS-6-1_0_0"
 			(polyline
 				(pts
-					(xy -5.08 0) (xy -2.54 0)
+					(xy -3.81 1.905) (xy -2.54 1.905)
 				)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start -5.08 -7.62)
-				(end 5.08 5.08)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
-					(type background)
+					(type none)
 				)
 			)
 			(polyline
 				(pts
-					(xy -2.3368 2.54) (xy -2.3368 -2.54)
+					(xy -3.175 2.54) (xy -3.175 1.27)
 				)
 				(stroke
-					(width 0.4064)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -133,10 +212,10 @@
 			)
 			(polyline
 				(pts
-					(xy -1.397 2.54) (xy -1.397 -2.54)
+					(xy -1.27 2.54) (xy -1.27 0)
 				)
 				(stroke
-					(width 0.4064)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -145,10 +224,10 @@
 			)
 			(polyline
 				(pts
-					(xy -1.397 2.54) (xy 1.397 2.54)
+					(xy -1.27 0) (xy -2.54 0)
 				)
 				(stroke
-					(width 0.4064)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -157,10 +236,10 @@
 			)
 			(polyline
 				(pts
-					(xy 1.397 2.54) (xy 1.397 -2.54)
+					(xy -1.27 0) (xy -1.27 -2.54)
 				)
 				(stroke
-					(width 0.4064)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -169,10 +248,10 @@
 			)
 			(polyline
 				(pts
-					(xy 1.397 -2.54) (xy -1.397 -2.54)
+					(xy 1.27 1.27) (xy 1.27 0)
 				)
 				(stroke
-					(width 0.4064)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -181,10 +260,10 @@
 			)
 			(polyline
 				(pts
-					(xy 2.3368 2.54) (xy 2.3368 -2.54)
+					(xy 1.27 0) (xy 1.27 -1.27)
 				)
 				(stroke
-					(width 0.4064)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -193,10 +272,10 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 0) (xy 5.08 0)
+					(xy 1.27 0) (xy 2.54 0)
 				)
 				(stroke
-					(width 0.1524)
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -205,7 +284,7 @@
 			)
 			(pin passive line
 				(at -7.62 0 0)
-				(length 2.54)
+				(length 5.08)
 				(name "~"
 					(effects
 						(font
@@ -213,25 +292,7 @@
 						)
 					)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -5.08 -5.08 180)
-				(length 2.54)
-				(name "GND__1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "4"
+				(number "P"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -241,7 +302,7 @@
 			)
 			(pin passive line
 				(at 7.62 0 180)
-				(length 2.54)
+				(length 5.08)
 				(name "~"
 					(effects
 						(font
@@ -249,25 +310,7 @@
 						)
 					)
 				)
-				(number "3"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 7.62 -5.08 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "2"
+				(number "N"
 					(effects
 						(font
 							(size 1.016 1.016)
