@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "ABM8-38.400MHZ-12-D1G-T:XTAL_ABM8-38.400MHZ-12-D1G-T"
+		(property "Footprint" "meridian:XTAL_ABM8-38.400MHZ-12-D1G-T"
 			(at 0 0 0)
 			(effects
 				(font
